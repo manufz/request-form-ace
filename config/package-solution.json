@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "request-form-ace-client-side-solution",
+    "id": "01bef6ef-bc6b-4a40-8af6-a730f03a5b32",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.14.0-beta.5"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "request-form-ace description"
+      },
+      "longDescription": {
+        "default": "request-form-ace description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "request-form-ace Feature",
+        "description": "The feature that activates elements of the request-form-ace solution.",
+        "id": "7895c4e4-b66b-400b-9e5d-afcf052f8a0a",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/request-form-ace.sppkg"
+  }
+}

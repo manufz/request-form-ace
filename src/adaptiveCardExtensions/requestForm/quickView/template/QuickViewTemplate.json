@@ -1,0 +1,52 @@
+{
+  "schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.2",
+  "body": [
+    {
+      "type": "Input.ChoiceSet",
+      "id": "choice",
+      "style": "expanded",
+      "label":  "${categoryLabel}",
+      "value": "feedback",
+      "choices": [
+        {
+          "title": "${feedbackRadio}",
+          "value": "feedback"
+        },
+        {
+          "title": "${problemRadio}",
+          "value": "problem"
+        }
+      ]
+    },
+    {
+      "type": "Input.Text",
+      "style": "text",
+      "id": "title",
+      "label": "${titleLabel}",
+      "isRequired": true,
+      "errorMessage": "${missingTitle}"
+    },
+    {
+      "type": "Input.Text",
+      "style": "text",
+      "isMultiline": true,
+      "id": "description",
+      "label": "${descriptionLabel}"
+    }
+  ],
+  "actions": [
+    {
+      "type": "VivaAction.SelectMedia",
+      "id": "files",
+      "parameters": {"mediaType": "MediaType.Image", "allowMultipleCapture": true, "maxSizePerFile" : 200000, "supportedFileFormats": ["jpg"]},
+      "title": "${selectFileButton}"
+    },
+    {
+      "type": "Action.Submit",
+      "id": "submit",
+      "title": "${submitButton}"
+    }
+  ]
+}
